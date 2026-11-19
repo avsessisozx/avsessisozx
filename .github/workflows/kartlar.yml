@@ -1,0 +1,36 @@
+name: Kartları güncelle
+
+on:
+  schedule:
+    - cron: '17 3 * * *'   # her gün 06:17 (Türkiye)
+  push:
+    branches: [main]
+    paths: ['projeler.json', 'araclar/**', 'kartlar/ikonlar/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  uret:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Kartları ve README'yi üret
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: ./araclar/kartlari-uret.ps1
+
+      - name: Değiştiyse kaydet
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Kartlar güncellendi [skip ci]"
+            git push
+          else
+            echo "Değişiklik yok."
+          fi

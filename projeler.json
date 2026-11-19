@@ -1,0 +1,36 @@
+{
+  "bolumler": [
+    {
+      "baslik": "Android",
+      "platform": "android",
+      "projeler": [
+        { "ad": "LanBeam", "repo": "lanbeam", "ikon": "arrows-exchange", "aciklama": "Aynı ağdaki cihazlar arasında hızlı dosya aktarımı: PC ↔ Android, Android ↔ Android" },
+        { "ad": "OpenPlayer", "repo": "Openplayer", "ikon": "player-play", "aciklama": "Reklamsız video ve müzik oynatıcı: mpv motoru, ASS altyazı, 360° video, ağdan oynatma" },
+        { "ad": "Telemet", "repo": "Telemet", "ikon": "map-pin", "aciklama": "Telefonu DJI Osmo Action için GPS kumandasına çevirir: hız, rota, yükseklik, yatış açısı" },
+        { "ad": "Eski Kamera", "repo": "eski-kamera", "ikon": "camera", "aciklama": "Eski bir telefon ya da kamera seç; foto ve video o cihazla çekilmiş gibi kaydedilir" },
+        { "ad": "Sayı Atölyesi", "repo": "sayi-atolyesi", "ikon": "abacus", "aciklama": "Sayıları görerek ve duyarak öğreten, internetsiz çalışan uygulama" },
+        { "ad": "XNagram", "repo": "xnagram", "ikon": "brand-telegram", "aciklama": "Nagram X tabanlı Telegram istemcisi: sürekli görünen çeviri düğmesi" },
+        { "ad": "Droid-WinOs", "repo": "Droid-WinOs", "ikon": "brand-windows", "aciklama": "Windows programlarını (oyun değil) telefonda çalıştırma denemesi" }
+      ]
+    },
+    {
+      "baslik": "Windows",
+      "platform": "windows",
+      "projeler": [
+        { "ad": "Ekran Işık Kontrol", "repo": "EkranIsikKontrol", "ikon": "sun", "aciklama": "Monitör parlaklığı telefondaki gibi kaydırıcıyla; çözünürlük/Hz, gece ışığı, fare ışığı" },
+        { "ad": "K55 Kontrol", "repo": "K55Kontrol", "ikon": "keyboard", "aciklama": "Corsair K55 RGB PRO için iCUE gerektirmeyen, hafif aydınlatma ve makro uygulaması" },
+        { "ad": "Douyin İndirici", "repo": "douyin-indirici", "ikon": "download", "aciklama": "Douyin video ve resimlerini tek tek ya da profil olarak toplu indirir (Android de var)" },
+        { "ad": "Instagram İndirici", "repo": "instagram-indirici", "ikon": "brand-instagram", "aciklama": "Herkese açık Instagram profillerini toplu indirir (Android ve Chrome eklentisi de var)" },
+        { "ad": "Reels Gözlemci", "repo": "Mark-Down-42", "ikon": "eye", "aciklama": "Instagram Reels akışını izleyip veri setine yazar, akışın tepkilerini incelemek için" },
+        { "ad": "Kimlik Merkezi", "repo": "kimlik-merkezi", "ikon": "fingerprint", "aciklama": "Dijital izlerini kendi bilgisayarında toplar; aramaya ve yapay zekâya salt okunur erişim" }
+      ]
+    },
+    {
+      "baslik": "Hem Android hem Windows",
+      "platform": "ikisi",
+      "projeler": [
+        { "ad": "TabletEkran", "repo": "tablet-ekran", "ikon": "device-tablet", "aciklama": "Eski Android tableti Windows için kablosuz ikinci ekrana çevirir" }
+      ]
+    }
+  ]
+}
